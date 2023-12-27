@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code and Chai
+
+    </title>
+</head>
+<body>
+    <script>
+         function outer(){
+         let name="outer";
+         console.log(secrete)
+         function inner1(){
+            let secrete="my123";
+         console.log("inner",name);//use variable declare in the parent
+         } 
+         function inner2(){
+            console.log("innertwo",name);
+            //use variable declare in the parent
+            console.log(secrete);
+         } 
+         inner1();
+        inner2();
+         }
+
+     
+    outer();
+       
+    </script>
+</body>
+</html>
